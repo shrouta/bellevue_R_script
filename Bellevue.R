@@ -36,9 +36,9 @@ gender_dummy <- as.data.frame(dummy.code(data$gender))
 gender_dummy$f <- gender_dummy$f + gender_dummy$g + gender_dummy$h
 
 # Creates xtab
-xtab <- data.frame(data$first_name, data$last_name, data$ageord, data$profession, data$gender, gender_dummy$f, gender_dummy$m, data$disease, disease_dummy, data$site_general_description, sent_to_dummy)
+xtab <- data.frame(data$ageord, data$profession, data$gender, gender_dummy$f, gender_dummy$m, data$disease, disease_dummy, data$site_general_description, sent_to_dummy)
 
-# Creates a lumping dummy variable for the Shanty
+# Creates a lumping dummy variable for lesser-diagnosed diseases
 xtab$shanty_other <- xtab$abandonment + xtab$abscess + xtab$ague + xtab$ascites + xtab$asthma + xtab$bleeding + xtab$blind + xtab$broken.bone + xtab$bronchitis + xtab$bruise + xtab$burn + xtab$colic + xtab$congested.head + xtab$contusion + xtab$cripple + xtab$deaf + xtab$debility + xtab$del.femur + xtab$delusion.dreams + xtab$diarrhea + xtab$disabled + xtab$dropsy + xtab$drunkenness + xtab$dysentery + xtab$eczema + xtab$emotional + xtab$erysipelas + xtab$fits + xtab$from.trial + xtab$horrors + xtab$hypochondria + xtab$injuries + xtab$illegible + xtab$insane + xtab$intemperance + xtab$jaundice + xtab$lame + xtab$measles + xtab$neuralgia + xtab$old.age + xtab$ophthalmia + xtab$paralysis + xtab$phagadaena + xtab$phthisis + xtab$piles + xtab$poorly + xtab$pregnant + xtab$rheumatism + xtab$rickets + xtab$scarletina + xtab$scrofula + xtab$seizure + xtab$severed.limb + xtab$sore + xtab$spinal.disease + xtab$sprain + xtab$syphilis + xtab$throat.cut + xtab$tuberculosis + xtab$tumor + xtab$typhus + xtab$ulcers + xtab$ungovernable + xtab$vagrant
 
 # Creates a table with age categories and entry into the Shanty
@@ -51,14 +51,14 @@ summary(shanty_age_disease)
 # Creates a crosstab in the style of SPSS, to determine (a) which diseases seem highly correlated with the Shanty and (b) which diseases might be productively lumped
 CrossTable(xtab$data.disease, xtab$Shanty, format="SPSS")
 
-# Creates a crosstab in the style of SPSS, to determine whether particular age cohorts seem correlated with the Shanty
+# Creates a crosstab in the style of SPSS, to determine whether particular age cohorts seem correlated with the Shanty and with being diagnosed as recent emigrant
 CrossTable(xtab$data.ageord, xtab$Shanty, format="SPSS")
+CrossTable(xtab$data.ageord, xtab$recent.emigrant, format="SPSS")
 
 # Logistic regression - treating the diagnosis recent emigrant as my reference category
-shanty_disease_logit <- glm(Shanty ~ shanty_other + sickness + destitution + fever + data.ageord, data=xtab, family="binomial")
+shanty_disease_logit <- glm(Shanty ~ recent.emigrant + sickness + destitution + fever + data.ageord, data=xtab, family="binomial")
 summary(shanty_disease_logit)
 
 # Coefficients and log odds
 shanty_disease_coefficients <- shanty_disease_logit$coefficients
-
 exp(shanty_disease_coefficients)
