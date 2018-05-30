@@ -26,50 +26,61 @@ dummies$injuries <- dummies$lame + dummies$same + dummies$sore.limb + dummies$in
 dummies$mental <- dummies$fits + dummies$ungovernable + dummies$emotional + dummies$delusion.dreams + dummies$horrors + dummies$insane
 
 # Creates a table with age categories and entry into the Shanty
-shanty_age <- xtabs(~ data.ageord + Shanty, data = dummies)
-shanty_age_disease <- xtabs(~ data.ageord + Shanty + data.disease, data = xtab)
-prop.tablsue(shanty_age)
-prop.table(shanty_age_disease)
-summary(shanty_age_disease)
+garret_age <- xtabs(~ data.ageord + Bellevue_Garret, data = dummies)
+garret_age_reason <- xtabs(~ data.ageord + Bellevue_Garret + data.reason, data = dummies)
+prop.table(garret_age)
+prop.table(garret_age_reason)
+summary(garret_age)
+summary(garret_age_reason)
 
 # Crosstabs
-CrossTable(dummies$data.disease, dummies$Shanty, format="SPSS")
-CrossTable(dummies$data.ageord, dummies$Shanty, format="SPSS")
+CrossTable(dummies$data.reason, dummies$Bellevue_Garret, format="SPSS")
+CrossTable(dummies$data.ageord, dummies$Bellevue_Garret, format="SPSS")
 CrossTable(dummies$data.ageord, dummies$recent.emigrant, format="SPSS")
-CrossTable(dummies$data.by_whom_sent2, dummies$Shanty, format="SPSS")
+CrossTable(dummies$data.admittor_1_cleaned, dummies$Bellevue_Garret, format="SPSS")
+
+# Crosstabs
+CrossTable(dummies$data.reason, dummies$Bellevue_Shanty, format="SPSS")
+CrossTable(dummies$data.ageord, dummies$Bellevue_Shanty, format="SPSS")
+CrossTable(dummies$data.admittor_1_cleaned, dummies$Bellevue_Shanty, format="SPSS")
 
 # Logistic regression - treating the missing category reference category - intercept stands in as log odds
-shanty_logit <- glm(Shanty ~ disease_other + sickness + destitution + fever + data.ageord, data=dummies, family="binomial")
+shanty_logit <- glm(Bellevue_Shanty ~ specific + injuries + destitution + mental + data.ageord, data=dummies, family="binomial")
 summary(shanty_logit)
 shanty_coef <- shanty_logit$coefficients
 exp(shanty_coef)
 
-garret_logit <- glm(Garret ~ disease_other + sickness + destitution + fever + data.ageord, data=dummies, family="binomial")
+chapel_logit <- glm(Bellevue_Chapel ~ specific + injuries + destitution + mental + data.ageord, data=dummies, family="binomial")
+summary(chapel_logit)
+chapel_coef <- chapel_logit$coefficients
+exp(chapel_coef)
+
+garret_logit <- glm(Bellevue_Garret ~ specific + injuries + destitution + mental + data.ageord, data=dummies, family="binomial")
 summary(garret_logit)
 garret_coef <- garret_logit$coefficients
 exp(garret_coef)
 
-almshouse_logit <- glm(Bellevue.Almshouse ~ disease_other + sickness + destitution + fever + data.ageord, data=dummies, family="binomial")
+almshouse_logit <- glm(Bellevue_Almshouse ~ specific + injuries + destitution + mental + data.ageord, data=dummies, family="binomial")
 summary(almshouse_logit)
 almshouse_coef <- almshouse_logit$coefficients
 exp(almshouse_coef)
 
-blackwell_logit <- glm(Blackwell.s.Island ~ disease_other + sickness + destitution + fever + data.ageord, data=dummies, family="binomial")
+blackwell_logit <- glm(Blackwell_NA ~ specific + injuries + destitution + mental + data.ageord, data=dummies, family="binomial")
 summary(blackwell_logit)
 blackwell_coef <- blackwell_logit$coefficients
 exp(blackwell_coef)
 
-randall_logit <- glm(Randall.s.Island ~ disease_other + sickness + destitution + fever + data.ageord, data=dummies, family="binomial")
+randall_logit <- glm(Randall_NA ~ specific + injuries + destitution + mental + data.ageord, data=dummies, family="binomial")
 summary(randall_logit)
 randall_coef <- randall_logit$coefficients
 exp(randall_coef)
 
-hospital_logit <- glm(Hospital ~ disease_other + sickness + destitution + fever + data.ageord, data=dummies, family="binomial")
+hospital_logit <- glm(Bellevue_Hospital ~ specific + injuries + destitution + mental + data.ageord, data=dummies, family="binomial")
 summary(hospital_logit)
 hospital_coef <- hospital_logit$coefficients
 exp(hospital_coef)
 
-recent_emigrant_logit <- glm(recent.emigrant ~ Shanty + Garret + Blackwell.s.Island + Randall.s.Island + Hospital + Long.Island + Lunatic.Asylum + data.ageord, data=dummies, family="binomial")
+recent_emigrant_logit <- glm(recent.emigrant ~ Bellevue_Shanty + Bellevue_Garret + Bellevue_Hospital + Long_Island_NA + Lunatic_Asylum_NA + Randall_NA + Blackwell_NA + data.ageord, data=dummies, family="binomial")
 summary(recent_emigrant_logit)
 recent_emigrant_coef <- recent_emigrant_logit$coefficients
 exp(recent_emigrant_coef)

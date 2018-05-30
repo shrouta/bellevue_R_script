@@ -36,5 +36,8 @@ bellevue_admittors_sites <- bellevue_admittors_sites[bellevue_admittors_sites_va
 
 write.csv(bellevue_admittors_sites, file="bellevue_for_R.csv")
 
-# Subset the data to keep only the entries that include "sent_to"
+# Subset the data to keep only the entries that include "sent_to", removes illegible entries
 data <- bellevue_admittors_sites[ which(bellevue_admittors_sites$sent_to>0), ]
+data <- data[ which(data$reason_cleaned!="(illegible)"), ]
+data <- data[ which(data$reason_cleaned!="for say"), ]
+data <- data[ which(data$sent_to!="NA_NA"), ]
