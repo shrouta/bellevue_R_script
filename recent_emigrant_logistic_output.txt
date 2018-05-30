@@ -1,0 +1,1429 @@
+
+Call:
+glm(formula = Bellevue_Shanty ~ recent.emigrant + disability + 
+    fever + injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5436  -0.2518  -0.0658  -0.0553   3.6015  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       -1.48821    0.36256  -4.105 4.05e-05 ***
+recent.emigrant   -0.54998    0.22311  -2.465   0.0137 *  
+disability         0.26110    1.04801   0.249   0.8033    
+fever            -16.69522  783.98621  -0.021   0.9830    
+injury           -16.51560 1088.42564  -0.015   0.9879    
+mental           -16.55663 1214.66670  -0.014   0.9891    
+pregnant         -16.66559 1422.20376  -0.012   0.9907    
+sickness          -3.24924    0.48258  -6.733 1.66e-11 ***
+social_general    -1.08049    1.02633  -1.053   0.2924    
+specific         -16.61486  843.54751  -0.020   0.9843    
+data.ageord       -0.34927    0.08909  -3.920 8.85e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 974.63  on 5254  degrees of freedom
+Residual deviance: 823.87  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 845.87
+
+Number of Fisher Scoring iterations: 18
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+   2.257775e-01    5.769612e-01    1.298359e+00    5.615121e-08    6.719934e-08    6.449837e-08    5.783967e-08    3.880369e-02    3.394286e-01 
+       specific     data.ageord 
+   6.084967e-08    7.052048e-01 
+
+Call:
+glm(formula = Bellevue_Chapel ~ recent.emigrant + disability + 
+    fever + injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.2881  -0.2436  -0.0852  -0.0783   3.5502  
+
+Coefficients:
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       -4.2630     0.5862  -7.272 3.54e-13 ***
+recent.emigrant    0.2471     0.2889   0.855    0.392    
+disability       -15.1236  1495.9722  -0.010    0.992    
+fever             -1.6595     1.0325  -1.607    0.108    
+injury            -1.0802     1.0362  -1.042    0.297    
+mental           -15.0583   738.1311  -0.020    0.984    
+pregnant         -15.0012   863.6238  -0.017    0.986    
+sickness          -2.2081     0.4322  -5.109 3.23e-07 ***
+social_general   -15.0936   820.9702  -0.018    0.985    
+specific          -1.5494     1.0331  -1.500    0.134    
+data.ageord        0.1709     0.1273   1.342    0.179    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 811.63  on 5254  degrees of freedom
+Residual deviance: 736.50  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 758.5
+
+Number of Fisher Scoring iterations: 17
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+   1.408031e-02    1.280337e+00    2.703342e-07    1.902287e-01    3.395413e-01    2.885851e-07    3.055506e-07    1.099102e-01    2.785616e-07 
+       specific     data.ageord 
+   2.123855e-01    1.186425e+00 
+
+Call:
+glm(formula = Bellevue_Garret ~ recent.emigrant + disability + 
+    fever + injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.8487  -0.4028  -0.0294  -0.0240   3.9359  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       -1.77152    0.31045  -5.706 1.15e-08 ***
+recent.emigrant    1.34441    0.23130   5.812 6.16e-09 ***
+disability       -15.84758 2462.10802  -0.006   0.9949    
+fever            -16.18278  781.82665  -0.021   0.9835    
+injury           -15.96958 1086.76239  -0.015   0.9883    
+mental            -0.80080    1.03158  -0.776   0.4376    
+pregnant         -16.14314 1421.16486  -0.011   0.9909    
+sickness          -4.33863    1.02436  -4.235 2.28e-05 ***
+social_general     1.14605    0.52054   2.202   0.0277 *  
+specific         -16.08739  841.65169  -0.019   0.9848    
+data.ageord       -0.40878    0.06409  -6.379 1.79e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1901.4  on 5254  degrees of freedom
+Residual deviance: 1407.7  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 1429.7
+
+Number of Fisher Scoring iterations: 18
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+   1.700737e-01    3.835911e+00    1.310641e-07    9.373631e-08    1.160109e-07    4.489718e-01    9.752713e-08    1.305434e-02    3.145736e+00 
+       specific     data.ageord 
+   1.031185e-07    6.644584e-01 
+
+Call:
+glm(formula = Bellevue_Almshouse ~ recent.emigrant + disability + 
+    fever + injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.4810  -0.1452  -0.1022  -0.0911   3.3129  
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)      -4.0265     0.6670  -6.037 1.57e-09 ***
+recent.emigrant  -1.4360     0.3420  -4.199 2.68e-05 ***
+disability        0.8787     0.7806   1.126   0.2603    
+fever            -1.3594     0.7398  -1.837   0.0661 .  
+injury           -0.3752     0.6239  -0.601   0.5476    
+mental           -1.2467     1.0278  -1.213   0.2251    
+pregnant        -14.3971   523.7227  -0.027   0.9781    
+sickness         -2.2965     0.3662  -6.271 3.59e-10 ***
+social_general   -1.0751     1.0313  -1.043   0.2972    
+specific         -0.8441     0.6182  -1.365   0.1721    
+data.ageord       0.2098     0.1508   1.392   0.1641    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 673.80  on 5254  degrees of freedom
+Residual deviance: 619.66  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 641.66
+
+Number of Fisher Scoring iterations: 16
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+   1.783607e-02    2.378704e-01    2.407681e+00    2.568079e-01    6.871731e-01    2.874487e-01    5.590289e-07    1.006152e-01    3.412525e-01 
+       specific     data.ageord 
+   4.299509e-01    1.233470e+00 
+
+Call:
+glm(formula = Blackwell_NA ~ recent.emigrant + disability + fever + 
+    injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4528  -0.4425  -0.2551  -0.2157   2.7952  
+
+Coefficients:
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       0.96786    0.20946   4.621 3.82e-06 ***
+recent.emigrant  -1.88018    0.12116 -15.518  < 2e-16 ***
+disability       -1.48512    0.75393  -1.970 0.048858 *  
+fever           -17.18264  288.12881  -0.060 0.952446    
+injury           -2.59448    0.51841  -5.005 5.60e-07 ***
+mental           -3.83255    1.01030  -3.793 0.000149 ***
+pregnant         -2.90723    0.72496  -4.010 6.07e-05 ***
+sickness         -3.01461    0.14482 -20.817  < 2e-16 ***
+social_general   -0.03661    0.28092  -0.130 0.896306    
+specific         -2.98775    0.46251  -6.460 1.05e-10 ***
+data.ageord      -0.34047    0.04855  -7.013 2.33e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3405.6  on 5254  degrees of freedom
+Residual deviance: 2684.1  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 2706.1
+
+Number of Fisher Scoring iterations: 16
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+   2.632310e+00    1.525619e-01    2.264750e-01    3.448850e-08    7.468493e-02    2.165427e-02    5.462688e-02    4.906480e-02    9.640502e-01 
+       specific     data.ageord 
+   5.040069e-02    7.114357e-01 
+
+Call:
+glm(formula = Randall_NA ~ recent.emigrant + disability + fever + 
+    injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7275  -0.2547  -0.0964  -0.0898   3.3211  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       -1.20197    0.31448  -3.822 0.000132 ***
+recent.emigrant   -1.64894    0.18412  -8.956  < 2e-16 ***
+disability       -16.69284 1496.06412  -0.011 0.991098    
+fever            -16.79991  477.83327  -0.035 0.971953    
+injury            -2.73063    1.01267  -2.696 0.007008 ** 
+mental           -16.74897  738.23981  -0.023 0.981899    
+pregnant         -16.79409  863.71707  -0.019 0.984487    
+sickness          -3.60668    0.32391 -11.135  < 2e-16 ***
+social_general     0.28869    0.35465   0.814 0.415648    
+specific          -3.27965    1.00986  -3.248 0.001164 ** 
+data.ageord       -0.14041    0.07572  -1.854 0.063703 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1473.7  on 5254  degrees of freedom
+Residual deviance: 1181.6  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 1203.6
+
+Number of Fisher Scoring iterations: 17
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+   3.006024e-01    1.922539e-01    5.628473e-08    5.056987e-08    6.517815e-02    5.321290e-08    5.086503e-08    2.714175e-02    1.334673e+00 
+       specific     data.ageord 
+   3.764161e-02    8.690004e-01 
+
+Call:
+glm(formula = Bellevue_Hospital ~ recent.emigrant + disability + 
+    fever + injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.0829   0.1317   0.2830   0.4116   2.6498  
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -3.50288    0.21532 -16.268  < 2e-16 ***
+recent.emigrant  2.07533    0.11706  17.729  < 2e-16 ***
+disability       1.90930    0.53326   3.580 0.000343 ***
+fever            5.49591    0.59253   9.275  < 2e-16 ***
+injury           3.34232    0.36563   9.141  < 2e-16 ***
+mental          -2.17788    0.59788  -3.643 0.000270 ***
+pregnant         4.60660    0.72740   6.333  2.4e-10 ***
+sickness         4.27870    0.13929  30.718  < 2e-16 ***
+social_general   0.24994    0.28866   0.866 0.386580    
+specific         3.94999    0.34346  11.501  < 2e-16 ***
+data.ageord      0.55007    0.04427  12.424  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 5841.6  on 5254  degrees of freedom
+Residual deviance: 3708.6  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 3730.6
+
+Number of Fisher Scoring iterations: 6
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+     0.03011061      7.96715950      6.74834603    243.69316229     28.28460779      0.11328115    100.14268684     72.14682655      1.28394397 
+       specific     data.ageord 
+    51.93497879      1.73338140 
+
+Call:
+glm(formula = Lunatic_Asylum_NA ~ recent.emigrant + disability + 
+    fever + injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.5171  -0.0498  -0.0353  -0.0227   3.8750  
+
+Coefficients:
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)      -10.3109     2.7502  -3.749 0.000177 ***
+recent.emigrant    0.1427     1.2458   0.115 0.908811    
+disability       -15.5466  6668.8824  -0.002 0.998140    
+fever            -15.0198  2097.1629  -0.007 0.994286    
+injury           -15.3649  2931.8977  -0.005 0.995819    
+mental             9.0010     1.1212   8.028 9.92e-16 ***
+pregnant         -14.9308  3833.5810  -0.004 0.996892    
+sickness          -1.5044     1.4153  -1.063 0.287816    
+social_general   -15.4550  3630.6314  -0.004 0.996604    
+specific         -15.1830  2261.7165  -0.007 0.994644    
+data.ageord        0.8870     0.5515   1.608 0.107777    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 794.80  on 5254  degrees of freedom
+Residual deviance: 102.25  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 124.25
+
+Number of Fisher Scoring iterations: 20
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+   3.327012e-05    1.153368e+00    1.770832e-07    2.999140e-07    2.123717e-07    8.111349e+03    3.278144e-07    2.221539e-01    1.940800e-07 
+       specific     data.ageord 
+   2.547331e-07    2.427745e+00 
+
+Call:
+glm(formula = Long_Island_NA ~ recent.emigrant + disability + 
+    fever + injury + mental + pregnant + sickness + social_general + 
+    specific + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.6727  -0.0988   0.0000   0.0000   3.4414  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -7.709e-01  4.302e-01  -1.792   0.0732 .  
+recent.emigrant -2.148e+00  3.580e-01  -6.000 1.97e-09 ***
+disability      -1.895e+01  1.101e+04  -0.002   0.9986    
+fever           -1.947e+01  3.475e+03  -0.006   0.9955    
+injury          -1.914e+01  4.849e+03  -0.004   0.9969    
+mental          -1.920e+01  5.422e+03  -0.004   0.9972    
+pregnant        -1.938e+01  6.358e+03  -0.003   0.9976    
+sickness        -1.932e+01  9.545e+02  -0.020   0.9838    
+social_general  -3.053e-02  7.561e-01  -0.040   0.9678    
+specific        -1.932e+01  3.748e+03  -0.005   0.9959    
+data.ageord     -6.000e-01  1.209e-01  -4.963 6.95e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 508.51  on 5254  degrees of freedom
+Residual deviance: 370.73  on 5244  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 392.73
+
+Number of Fisher Scoring iterations: 21
+
+    (Intercept) recent.emigrant      disability           fever          injury          mental        pregnant        sickness  social_general 
+   4.626139e-01    1.166834e-01    5.905763e-09    3.494341e-09    4.871452e-09    4.577885e-09    3.825231e-09    4.063099e-09    9.699322e-01 
+       specific     data.ageord 
+   4.054679e-09    5.488304e-01 
+
+Call:
+glm(formula = Bellevue_Shanty ~ a.b.roberts + a.g..schratty + 
+    abraham.r..lawrence + ald..pan + alexander.h..schultz + benson.s..hopkins + 
+    bernard.j..mersole + clarkson.crolius + commissioners.of.emigration + 
+    edward.witherell + g.w..anderson + g.w..hansen.4th.ward + 
+    george.h..purser + illegibile + j..blackwell + jacob.l..dodge + 
+    james.d..oliver + james.donnelly + james.kelly + james.walsh + 
+    john.p..cumming + leonard.l..johnson + mcgavin + morris.franklin + 
+    moses.g..leonard + moses.m..s..jackson + moses.maynard + 
+    oscar.s..field + peter.greg + police + resident.physician + 
+    richard.t..compton + superintendent + theodore.r..deforest + 
+    thomas.conner + thomas.spofford + washington.smith + william.a..walker + 
+    william.adams + william.f..jackson + william.w..fream + data.ageord, 
+    family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.6376  -0.1959  -0.1239  -0.0950   3.3298  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                   -2.73859    0.44660  -6.132 8.68e-10 ***
+a.b.roberts                  -14.33511 4539.02743  -0.003   0.9975    
+a.g..schratty                -13.16810 6522.63861  -0.002   0.9984    
+abraham.r..lawrence          -13.39343 1623.83078  -0.008   0.9934    
+ald..pan                     -13.16810 6522.63861  -0.002   0.9984    
+alexander.h..schultz         -13.69997 3765.84716  -0.004   0.9971    
+benson.s..hopkins            -14.26355 3182.12129  -0.004   0.9964    
+bernard.j..mersole           -13.69997 6522.63861  -0.002   0.9983    
+clarkson.crolius             -13.54511 2166.67258  -0.006   0.9950    
+commissioners.of.emigration  -13.69997 6522.63861  -0.002   0.9983    
+edward.witherell             -13.37027 3750.57883  -0.004   0.9972    
+g.w..anderson                  1.78069    0.31336   5.683 1.33e-08 ***
+g.w..hansen.4th.ward         -13.16810 6522.63861  -0.002   0.9984    
+george.h..purser             -13.58548 3252.11005  -0.004   0.9967    
+illegibile                   -13.93901 2904.65681  -0.005   0.9962    
+j..blackwell                 -13.16810 6522.63861  -0.002   0.9984    
+jacob.l..dodge               -13.37027 3750.57883  -0.004   0.9972    
+james.d..oliver              -13.16810 6522.63861  -0.002   0.9984    
+james.donnelly               -13.16810 6522.63861  -0.002   0.9984    
+james.kelly                  -13.16810 6522.63861  -0.002   0.9984    
+james.walsh                  -13.85454 3249.67155  -0.004   0.9966    
+john.p..cumming              -13.50350 1875.51291  -0.007   0.9943    
+leonard.l..johnson           -14.23185 6522.63861  -0.002   0.9983    
+mcgavin                      -14.23185 6522.63861  -0.002   0.9983    
+morris.franklin              -13.16810 4612.20200  -0.003   0.9977    
+moses.g..leonard              -0.14190    0.39627  -0.358   0.7203    
+moses.m..s..jackson          -13.54511 3752.78697  -0.004   0.9971    
+moses.maynard                -13.62476 1675.79249  -0.008   0.9935    
+oscar.s..field               -13.65521 2888.16306  -0.005   0.9962    
+peter.greg                   -13.16810 6522.63861  -0.002   0.9984    
+police                       -13.49496  712.26424  -0.019   0.9849    
+resident.physician           -13.46056 4592.80283  -0.003   0.9977    
+richard.t..compton           -13.16810 6522.63861  -0.002   0.9984    
+superintendent                 0.77676    1.04812   0.741   0.4586    
+theodore.r..deforest         -13.32266 2297.86480  -0.006   0.9954    
+thomas.conner                -13.69997 6522.63861  -0.002   0.9983    
+thomas.spofford                2.51620    1.07657   2.337   0.0194 *  
+washington.smith             -13.81708 1465.41904  -0.009   0.9925    
+william.a..walker            -13.46056 3247.60203  -0.004   0.9967    
+william.adams                -13.60915 2910.12844  -0.005   0.9963    
+william.f..jackson           -13.46056 4592.80283  -0.003   0.9977    
+william.w..fream             -13.69997 6522.63861  -0.002   0.9983    
+data.ageord                   -0.53188    0.09348  -5.690 1.27e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 852.06  on 4739  degrees of freedom
+Residual deviance: 738.95  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 824.95
+
+Number of Fisher Scoring iterations: 17
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               6.466144e-02                5.947617e-07                1.910592e-06                1.525134e-06                1.910592e-06 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               1.122476e-06                6.388802e-07                1.122476e-06                1.310495e-06                1.122476e-06 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               1.560872e-06                5.933922e+00                1.910592e-06                1.258639e-06                8.838246e-07 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               1.910592e-06                1.560872e-06                1.910592e-06                1.910592e-06                1.910592e-06 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               9.617248e-07                1.366174e-06                6.594566e-07                6.594566e-07                1.910592e-06 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               8.677096e-01                1.310495e-06                1.210155e-06                1.173860e-06                1.910592e-06 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               1.377888e-06                1.426113e-06                1.910592e-06                2.174421e+00                1.636974e-06 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               1.122476e-06                1.238141e+01                9.984305e-07                1.426113e-06                1.229202e-06 
+         william.f..jackson            william.w..fream                 data.ageord 
+               1.426113e-06                1.122476e-06                5.875017e-01 
+
+Call:
+glm(formula = Bellevue_Chapel ~ a.b.roberts + a.g..schratty + 
+    abraham.r..lawrence + ald..pan + alexander.h..schultz + benson.s..hopkins + 
+    bernard.j..mersole + clarkson.crolius + commissioners.of.emigration + 
+    edward.witherell + g.w..anderson + g.w..hansen.4th.ward + 
+    george.h..purser + illegibile + j..blackwell + jacob.l..dodge + 
+    james.d..oliver + james.donnelly + james.kelly + james.walsh + 
+    john.p..cumming + leonard.l..johnson + mcgavin + morris.franklin + 
+    moses.g..leonard + moses.m..s..jackson + moses.maynard + 
+    oscar.s..field + peter.greg + police + resident.physician + 
+    richard.t..compton + superintendent + theodore.r..deforest + 
+    thomas.conner + thomas.spofford + washington.smith + william.a..walker + 
+    william.adams + william.f..jackson + william.w..fream + data.ageord, 
+    family = "binomial", data = dummies)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.36120  -0.14235  -0.12117  -0.00003   3.13624  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)
+(Intercept)                 -2.226e+01  7.037e+02  -0.032    0.975
+a.b.roberts                  2.014e-01  2.065e+04   0.000    1.000
+a.g..schratty               -1.124e-01  2.924e+04   0.000    1.000
+abraham.r..lawrence         -5.397e-02  7.339e+03   0.000    1.000
+ald..pan                    -1.124e-01  2.924e+04   0.000    1.000
+alexander.h..schultz         4.949e-02  1.689e+04   0.000    1.000
+benson.s..hopkins            1.539e-01  1.459e+04   0.000    1.000
+bernard.j..mersole           4.949e-02  2.924e+04   0.000    1.000
+clarkson.crolius            -6.708e-03  9.766e+03   0.000    1.000
+commissioners.of.emigration  4.949e-02  2.924e+04   0.000    1.000
+edward.witherell            -6.059e-02  1.689e+04   0.000    1.000
+g.w..anderson                1.876e+01  7.037e+02   0.027    0.979
+g.w..hansen.4th.ward        -1.124e-01  2.924e+04   0.000    1.000
+george.h..purser             7.116e-03  1.463e+04   0.000    1.000
+illegibile                   1.119e-01  1.309e+04   0.000    1.000
+j..blackwell                -1.124e-01  2.924e+04   0.000    1.000
+jacob.l..dodge              -6.059e-02  1.689e+04   0.000    1.000
+james.d..oliver             -1.124e-01  2.924e+04   0.000    1.000
+james.donnelly              -1.124e-01  2.924e+04   0.000    1.000
+james.kelly                 -1.124e-01  2.924e+04   0.000    1.000
+james.walsh                  8.813e-02  1.463e+04   0.000    1.000
+john.p..cumming             -2.039e-02  8.465e+03   0.000    1.000
+leonard.l..johnson           2.113e-01  2.924e+04   0.000    1.000
+mcgavin                      2.113e-01  2.924e+04   0.000    1.000
+morris.franklin             -1.124e-01  2.068e+04   0.000    1.000
+moses.g..leonard             1.687e+01  7.037e+02   0.024    0.981
+moses.m..s..jackson         -6.708e-03  1.689e+04   0.000    1.000
+moses.maynard                1.419e-02  7.577e+03   0.000    1.000
+oscar.s..field               1.160e-02  1.308e+04   0.000    1.000
+peter.greg                  -1.124e-01  2.924e+04   0.000    1.000
+police                      -2.558e-02  3.284e+03   0.000    1.000
+resident.physician          -3.392e-02  2.067e+04   0.000    1.000
+richard.t..compton          -1.124e-01  2.924e+04   0.000    1.000
+superintendent              -2.434e-02  3.562e+03   0.000    1.000
+theodore.r..deforest        -7.372e-02  1.036e+04   0.000    1.000
+thomas.conner                4.949e-02  2.924e+04   0.000    1.000
+thomas.spofford             -4.999e-02  7.578e+03   0.000    1.000
+washington.smith             4.163e-02  6.735e+03   0.000    1.000
+william.a..walker           -3.392e-02  1.463e+04   0.000    1.000
+william.adams                1.548e-02  1.309e+04   0.000    1.000
+william.f..jackson          -3.392e-02  2.067e+04   0.000    1.000
+william.w..fream             4.949e-02  2.924e+04   0.000    1.000
+data.ageord                  1.618e-01  1.311e-01   1.235    0.217
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 745.85  on 4739  degrees of freedom
+Residual deviance: 611.06  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 697.06
+
+Number of Fisher Scoring iterations: 20
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               2.144518e-10                1.223090e+00                8.937318e-01                9.474599e-01                8.937318e-01 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               1.050739e+00                1.166352e+00                1.050739e+00                9.933145e-01                1.050739e+00 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               9.412130e-01                1.399427e+08                8.937318e-01                1.007141e+00                1.118354e+00 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               8.937318e-01                9.412130e-01                8.937318e-01                8.937318e-01                8.937318e-01 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               1.092126e+00                9.798198e-01                1.235329e+00                1.235329e+00                8.937318e-01 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               2.114113e+07                9.933145e-01                1.014288e+00                1.011672e+00                8.937318e-01 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               9.747407e-01                9.666454e-01                8.937318e-01                9.759558e-01                9.289342e-01 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               1.050739e+00                9.512431e-01                1.042513e+00                9.666454e-01                1.015601e+00 
+         william.f..jackson            william.w..fream                 data.ageord 
+               9.666454e-01                1.050739e+00                1.175676e+00 
+
+Call:
+glm(formula = Bellevue_Garret ~ a.b.roberts + a.g..schratty + 
+    abraham.r..lawrence + ald..pan + alexander.h..schultz + benson.s..hopkins + 
+    bernard.j..mersole + clarkson.crolius + commissioners.of.emigration + 
+    edward.witherell + g.w..anderson + g.w..hansen.4th.ward + 
+    george.h..purser + illegibile + j..blackwell + jacob.l..dodge + 
+    james.d..oliver + james.donnelly + james.kelly + james.walsh + 
+    john.p..cumming + leonard.l..johnson + mcgavin + morris.franklin + 
+    moses.g..leonard + moses.m..s..jackson + moses.maynard + 
+    oscar.s..field + peter.greg + police + resident.physician + 
+    richard.t..compton + superintendent + theodore.r..deforest + 
+    thomas.conner + thomas.spofford + washington.smith + william.a..walker + 
+    william.adams + william.f..jackson + william.w..fream + data.ageord, 
+    family = "binomial", data = dummies)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.17439  -0.29747  -0.16575  -0.00005   2.93074  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 -1.816e+01  4.179e+02  -0.043    0.965    
+a.b.roberts                 -7.496e-01  1.228e+04   0.000    1.000    
+a.g..schratty                5.591e-01  1.774e+04   0.000    1.000    
+abraham.r..lawrence          3.054e-01  4.428e+03   0.000    1.000    
+ald..pan                     5.591e-01  1.774e+04   0.000    1.000    
+alexander.h..schultz        -3.345e-02  1.025e+04   0.000    1.000    
+benson.s..hopkins           -6.729e-01  8.590e+03   0.000    1.000    
+bernard.j..mersole          -3.345e-02  1.774e+04   0.000    1.000    
+clarkson.crolius             1.372e-01  5.898e+03   0.000    1.000    
+commissioners.of.emigration -3.345e-02  1.774e+04   0.000    1.000    
+edward.witherell             3.312e-01  1.019e+04   0.000    1.000    
+g.w..anderson                1.875e+01  4.179e+02   0.045    0.964    
+g.w..hansen.4th.ward         5.591e-01  1.774e+04   0.000    1.000    
+george.h..purser             9.265e-02  8.842e+03   0.000    1.000    
+illegibile                  -3.024e-01  7.896e+03   0.000    1.000    
+j..blackwell                 5.591e-01  1.774e+04   0.000    1.000    
+jacob.l..dodge               3.312e-01  1.019e+04   0.000    1.000    
+james.d..oliver              5.591e-01  1.774e+04   0.000    1.000    
+james.donnelly               5.591e-01  1.774e+04   0.000    1.000    
+james.kelly                  5.591e-01  1.774e+04   0.000    1.000    
+james.walsh                 -2.080e-01  8.833e+03   0.000    1.000    
+john.p..cumming              1.832e-01  5.109e+03   0.000    1.000    
+leonard.l..johnson          -6.260e-01  1.774e+04   0.000    1.000    
+mcgavin                     -6.260e-01  1.774e+04   0.000    1.000    
+morris.franklin              5.591e-01  1.254e+04   0.000    1.000    
+moses.g..leonard             1.684e+01  4.179e+02   0.040    0.968    
+moses.m..s..jackson          1.372e-01  1.020e+04   0.000    1.000    
+moses.maynard                4.735e-02  4.567e+03   0.000    1.000    
+oscar.s..field               1.024e-02  7.836e+03   0.000    1.000    
+peter.greg                   5.591e-01  1.774e+04   0.000    1.000    
+police                       1.918e-01  1.977e+03   0.000    1.000    
+resident.physician           2.308e-01  1.247e+04   0.000    1.000    
+richard.t..compton           4.169e+01  1.774e+04   0.002    0.998    
+superintendent               1.645e+01  4.179e+02   0.039    0.969    
+theodore.r..deforest         3.845e-01  6.253e+03   0.000    1.000    
+thomas.conner               -3.345e-02  1.774e+04   0.000    1.000    
+thomas.spofford              2.902e-01  4.571e+03   0.000    1.000    
+washington.smith            -1.827e-01  3.980e+03   0.000    1.000    
+william.a..walker            2.308e-01  8.825e+03   0.000    1.000    
+william.adams                6.655e-02  7.915e+03   0.000    1.000    
+william.f..jackson           2.308e-01  1.247e+04   0.000    1.000    
+william.w..fream            -3.345e-02  1.774e+04   0.000    1.000    
+data.ageord                 -5.925e-01  6.443e-02  -9.197   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1846.4  on 4739  degrees of freedom
+Residual deviance: 1339.6  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 1425.6
+
+Number of Fisher Scoring iterations: 19
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               1.294498e-08                4.725813e-01                1.749026e+00                1.357202e+00                1.749026e+00 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               9.670986e-01                5.102246e-01                9.670986e-01                1.147076e+00                9.670986e-01 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               1.392713e+00                1.387199e+08                1.749026e+00                1.097076e+00                7.390807e-01 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               1.749026e+00                1.392713e+00                1.749026e+00                1.749026e+00                1.749026e+00 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               8.121852e-01                1.201084e+00                5.347431e-01                5.347431e-01                1.749026e+00 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               2.067127e+07                1.147076e+00                1.048490e+00                1.010296e+00                1.749026e+00 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               1.211378e+00                1.259609e+00                1.277193e+18                1.388074e+07                1.468861e+00 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               9.670986e-01                1.336649e+00                8.329758e-01                1.259609e+00                1.068817e+00 
+         william.f..jackson            william.w..fream                 data.ageord 
+               1.259609e+00                9.670986e-01                5.529354e-01 
+
+Call:
+glm(formula = Bellevue_Almshouse ~ a.b.roberts + a.g..schratty + 
+    abraham.r..lawrence + ald..pan + alexander.h..schultz + benson.s..hopkins + 
+    bernard.j..mersole + clarkson.crolius + commissioners.of.emigration + 
+    edward.witherell + g.w..anderson + g.w..hansen.4th.ward + 
+    george.h..purser + illegibile + j..blackwell + jacob.l..dodge + 
+    james.d..oliver + james.donnelly + james.kelly + james.walsh + 
+    john.p..cumming + leonard.l..johnson + mcgavin + morris.franklin + 
+    moses.g..leonard + moses.m..s..jackson + moses.maynard + 
+    oscar.s..field + peter.greg + police + resident.physician + 
+    richard.t..compton + superintendent + theodore.r..deforest + 
+    thomas.conner + thomas.spofford + washington.smith + william.a..walker + 
+    william.adams + william.f..jackson + william.w..fream + data.ageord, 
+    family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7141  -0.2098  -0.1698  -0.0315   3.7960  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    -9.2257     1.2355  -7.467 8.18e-14 ***
+a.b.roberts                   -11.6144  7533.7255  -0.002 0.998770    
+a.g..schratty                 -12.3621 10754.0130  -0.001 0.999083    
+abraham.r..lawrence           -12.2246  2682.7167  -0.005 0.996364    
+ald..pan                      -12.3621 10754.0130  -0.001 0.999083    
+alexander.h..schultz          -11.9578  6208.8324  -0.002 0.998463    
+benson.s..hopkins             -11.7597  5290.6229  -0.002 0.998227    
+bernard.j..mersole            -11.9578 10754.0130  -0.001 0.999113    
+clarkson.crolius              -12.1069  3576.4952  -0.003 0.997299    
+commissioners.of.emigration   -11.9578 10754.0130  -0.001 0.999113    
+edward.witherell              -12.2406  6196.3502  -0.002 0.998424    
+g.w..anderson                   3.8027     1.0225   3.719 0.000200 ***
+g.w..hansen.4th.ward          -12.3621 10754.0130  -0.001 0.999083    
+george.h..purser              -12.0712  5366.3015  -0.002 0.998205    
+illegibile                      6.3720     1.5088   4.223 2.41e-05 ***
+j..blackwell                  -12.3621 10754.0130  -0.001 0.999083    
+jacob.l..dodge                -12.2406  6196.3502  -0.002 0.998424    
+james.d..oliver               -12.3621 10754.0130  -0.001 0.999083    
+james.donnelly                -12.3621 10754.0130  -0.001 0.999083    
+james.kelly                   -12.3621 10754.0130  -0.001 0.999083    
+james.walsh                   -11.8676  5368.1501  -0.002 0.998236    
+john.p..cumming               -12.1416  3096.9229  -0.004 0.996872    
+leonard.l..johnson            -11.5534 10754.0130  -0.001 0.999143    
+mcgavin                       -11.5534 10754.0130  -0.001 0.999143    
+morris.franklin               -12.3621  7604.2356  -0.002 0.998703    
+moses.g..leonard                3.7805     1.0153   3.723 0.000197 ***
+moses.m..s..jackson           -12.1069  6194.6712  -0.002 0.998441    
+moses.maynard                 -12.0570  2768.6853  -0.004 0.996525    
+oscar.s..field                -12.0722  4784.8084  -0.003 0.997987    
+peter.greg                    -12.3621 10754.0130  -0.001 0.999083    
+police                        -12.1560  1177.1242  -0.010 0.991760    
+resident.physician            -12.1754  7585.9501  -0.002 0.998719    
+richard.t..compton            -12.3621 10754.0130  -0.001 0.999083    
+superintendent                -12.1570  1280.5432  -0.009 0.992425    
+theodore.r..deforest          -12.2720  3795.8554  -0.003 0.997420    
+thomas.conner                 -11.9578 10754.0130  -0.001 0.999113    
+thomas.spofford               -12.2149  2770.4985  -0.004 0.996482    
+washington.smith              -12.0025  2451.5523  -0.005 0.996094    
+william.a..walker             -12.1754  5364.0768  -0.002 0.998189    
+william.adams                 -12.0493  4800.9977  -0.003 0.997998    
+william.f..jackson            -12.1754  7585.9501  -0.002 0.998719    
+william.w..fream              -11.9578 10754.0130  -0.001 0.999113    
+data.ageord                     0.4043     0.1612   2.509 0.012121 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 660.93  on 4739  degrees of freedom
+Residual deviance: 590.38  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 676.38
+
+Number of Fisher Scoring iterations: 18
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               9.847767e-05                9.035124e-06                4.277705e-06                4.908343e-06                4.277705e-06 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               6.409351e-06                7.813467e-06                6.409351e-06                5.521533e-06                6.409351e-06 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               4.830469e-06                4.482328e+01                4.277705e-06                5.722096e-06                5.852381e+02 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               4.277705e-06                4.830469e-06                4.277705e-06                4.277705e-06                4.277705e-06 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               7.013675e-06                5.333089e-06                9.603227e-06                9.603227e-06                4.277705e-06 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               4.383927e+01                5.521533e-06                5.803839e-06                5.716093e-06                4.277705e-06 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               5.256478e-06                5.155704e-06                4.277705e-06                5.251691e-06                4.681041e-06 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               6.409351e-06                4.956129e-06                6.128652e-06                5.155704e-06                5.848743e-06 
+         william.f..jackson            william.w..fream                 data.ageord 
+               5.155704e-06                6.409351e-06                1.498315e+00 
+
+Call:
+glm(formula = Blackwell_NA ~ a.b.roberts + a.g..schratty + abraham.r..lawrence + 
+    ald..pan + alexander.h..schultz + benson.s..hopkins + bernard.j..mersole + 
+    clarkson.crolius + commissioners.of.emigration + edward.witherell + 
+    g.w..anderson + g.w..hansen.4th.ward + george.h..purser + 
+    illegibile + j..blackwell + jacob.l..dodge + james.d..oliver + 
+    james.donnelly + james.kelly + james.walsh + john.p..cumming + 
+    leonard.l..johnson + mcgavin + morris.franklin + moses.g..leonard + 
+    moses.m..s..jackson + moses.maynard + oscar.s..field + peter.greg + 
+    police + resident.physician + richard.t..compton + superintendent + 
+    theodore.r..deforest + thomas.conner + thomas.spofford + 
+    washington.smith + william.a..walker + william.adams + william.f..jackson + 
+    william.w..fream + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.5662  -0.4909  -0.4432  -0.0545   3.6093  
+
+Coefficients:
+                             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    0.3742     0.2070   1.808  0.07062 .  
+a.b.roberts                  -15.4438  1660.4332  -0.009  0.99258    
+a.g..schratty                -14.2951  2399.5447  -0.006  0.99525    
+abraham.r..lawrence            0.5856     0.6484   0.903  0.36639    
+ald..pan                     -14.2951  2399.5447  -0.006  0.99525    
+alexander.h..schultz           1.0488     1.2268   0.855  0.39261    
+benson.s..hopkins              1.3396     1.0614   1.262  0.20689    
+bernard.j..mersole           -14.8241  2399.5447  -0.006  0.99507    
+clarkson.crolius             -14.6674   796.0670  -0.018  0.98530    
+commissioners.of.emigration  -14.8241  2399.5447  -0.006  0.99507    
+edward.witherell             -14.4935  1378.0179  -0.011  0.99161    
+g.w..anderson                 -4.7700     0.7127  -6.693 2.18e-11 ***
+g.w..hansen.4th.ward         -14.2951  2399.5447  -0.006  0.99525    
+george.h..purser             -14.7080  1195.1114  -0.012  0.99018    
+illegibile                   -15.0589  1067.1033  -0.014  0.98874    
+j..blackwell                 -14.2951  2399.5447  -0.006  0.99525    
+jacob.l..dodge               -14.4935  1378.0179  -0.011  0.99161    
+james.d..oliver              -14.2951  2399.5447  -0.006  0.99525    
+james.donnelly               -14.2951  2399.5447  -0.006  0.99525    
+james.kelly                  -14.2951  2399.5447  -0.006  0.99525    
+james.walsh                  -14.9756  1194.2177  -0.013  0.98999    
+john.p..cumming               -0.4632     1.0494  -0.441  0.65894    
+leonard.l..johnson           -15.3532  2399.5447  -0.006  0.99489    
+mcgavin                      -15.3532  2399.5447  -0.006  0.99489    
+morris.franklin              -14.2951  1696.7343  -0.008  0.99328    
+moses.g..leonard              -0.3135     0.1056  -2.969  0.00298 ** 
+moses.m..s..jackson            2.6212     1.2358   2.121  0.03392 *  
+moses.maynard                 -0.8265     1.0401  -0.795  0.42687    
+oscar.s..field               -14.7728  1059.1682  -0.014  0.98887    
+peter.greg                   -14.2951  2399.5447  -0.006  0.99525    
+police                        -0.6099     0.4312  -1.415  0.15721    
+resident.physician           -14.5829  1687.1908  -0.009  0.99310    
+richard.t..compton           -14.2951  2399.5447  -0.006  0.99525    
+superintendent                -0.6606     0.4736  -1.395  0.16311    
+theodore.r..deforest           1.0273     0.8248   1.246  0.21292    
+thomas.conner                -14.8241  2399.5447  -0.006  0.99507    
+thomas.spofford                1.3554     0.5571   2.433  0.01498 *  
+washington.smith              -0.4992     0.7666  -0.651  0.51493    
+william.a..walker            -14.5829  1193.0241  -0.012  0.99025    
+william.adams                -14.7319  1069.6058  -0.014  0.98901    
+william.f..jackson           -14.5829  1687.1908  -0.009  0.99310    
+william.w..fream             -14.8241  2399.5447  -0.006  0.99507    
+data.ageord                   -0.5290     0.0488 -10.840  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3121.1  on 4739  degrees of freedom
+Residual deviance: 2725.3  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 2811.3
+
+Number of Fisher Scoring iterations: 15
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               1.453794e+00                1.962698e-07                6.190205e-07                1.796130e+00                6.190205e-07 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               2.854139e+00                3.817477e+00                3.647145e-07                4.266071e-07                3.647145e-07 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               5.076582e-07                8.480504e-03                6.190205e-07                4.096366e-07                2.883952e-07 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               6.190205e-07                5.076582e-07                6.190205e-07                6.190205e-07                6.190205e-07 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               3.134714e-07                6.292764e-01                2.148825e-07                2.148825e-07                6.190205e-07 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               7.309142e-01                1.375164e+01                4.375927e-01                3.839280e-07                6.190205e-07 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               5.433913e-01                4.642044e-07                6.190205e-07                5.165454e-01                2.793559e+00 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               3.647145e-07                3.878145e+00                6.070298e-01                4.642044e-07                3.999707e-07 
+         william.f..jackson            william.w..fream                 data.ageord 
+               4.642044e-07                3.647145e-07                5.891800e-01 
+
+Call:
+glm(formula = Randall_NA ~ a.b.roberts + a.g..schratty + abraham.r..lawrence + 
+    ald..pan + alexander.h..schultz + benson.s..hopkins + bernard.j..mersole + 
+    clarkson.crolius + commissioners.of.emigration + edward.witherell + 
+    g.w..anderson + g.w..hansen.4th.ward + george.h..purser + 
+    illegibile + j..blackwell + jacob.l..dodge + james.d..oliver + 
+    james.donnelly + james.kelly + james.walsh + john.p..cumming + 
+    leonard.l..johnson + mcgavin + morris.franklin + moses.g..leonard + 
+    moses.m..s..jackson + moses.maynard + oscar.s..field + peter.greg + 
+    police + resident.physician + richard.t..compton + superintendent + 
+    theodore.r..deforest + thomas.conner + thomas.spofford + 
+    washington.smith + william.a..walker + william.adams + william.f..jackson + 
+    william.w..fream + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4357  -0.2856  -0.2436  -0.2076   3.0369  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                   -1.85114    0.33264  -5.565 2.62e-08 ***
+a.b.roberts                  -14.78158 2778.04486  -0.005  0.99575    
+a.g..schratty                -14.09674 3956.18033  -0.004  0.99716    
+abraham.r..lawrence          -14.22721  987.34191  -0.014  0.98850    
+ald..pan                     -14.09674 3956.18033  -0.004  0.99716    
+alexander.h..schultz         -14.42037 2284.10178  -0.006  0.99496    
+benson.s..hopkins            -14.72451 1956.13497  -0.008  0.99399    
+bernard.j..mersole           -14.42037 3956.18033  -0.004  0.99709    
+clarkson.crolius             -14.32067 1316.74101  -0.011  0.99132    
+commissioners.of.emigration   20.71176 3956.18033   0.005  0.99582    
+edward.witherell               4.05862    1.23516   3.286  0.00102 ** 
+g.w..anderson                 -0.46214    0.22370  -2.066  0.03884 *  
+g.w..hansen.4th.ward         -14.09674 3956.18033  -0.004  0.99716    
+george.h..purser             -14.34626 1975.63152  -0.007  0.99421    
+illegibile                   -14.55912 1766.16015  -0.008  0.99342    
+j..blackwell                 -14.09674 3956.18033  -0.004  0.99716    
+jacob.l..dodge               -14.21333 2280.32694  -0.006  0.99503    
+james.d..oliver              -14.09674 3956.18033  -0.004  0.99716    
+james.donnelly               -14.09674 3956.18033  -0.004  0.99716    
+james.kelly                  -14.09674 3956.18033  -0.004  0.99716    
+james.walsh                  -14.50876 1975.26291  -0.007  0.99414    
+john.p..cumming              -14.29461 1140.12722  -0.013  0.99000    
+leonard.l..johnson           -14.74401 3956.18033  -0.004  0.99703    
+mcgavin                      -14.74401 3956.18033  -0.004  0.99703    
+morris.franklin              -14.09674 2797.44194  -0.005  0.99598    
+moses.g..leonard              -0.35691    0.19132  -1.866  0.06211 .  
+moses.m..s..jackson          -14.32067 2280.66232  -0.006  0.99499    
+moses.maynard                -14.36676 1019.36089  -0.014  0.98876    
+oscar.s..field               -14.37740 1762.00852  -0.008  0.99349    
+peter.greg                   -14.09674 3956.18033  -0.004  0.99716    
+police                        -1.13200    1.01423  -1.116  0.26437    
+resident.physician           -14.26804 2792.48264  -0.005  0.99592    
+richard.t..compton           -14.09674 3956.18033  -0.004  0.99716    
+superintendent                -0.97749    1.01558  -0.962  0.33580    
+theodore.r..deforest         -14.18512 1396.72180  -0.010  0.99190    
+thomas.conner                -14.42037 3956.18033  -0.004  0.99709    
+thomas.spofford              -14.23548 1019.69305  -0.014  0.98886    
+washington.smith             -14.45783  900.85206  -0.016  0.98720    
+william.a..walker            -14.26804 1974.58341  -0.007  0.99423    
+william.adams                -14.36139 1767.40522  -0.008  0.99352    
+william.f..jackson           -14.26804 2792.48264  -0.005  0.99592    
+william.w..fream             -14.42037 3956.18033  -0.004  0.99709    
+data.ageord                   -0.32364    0.07703  -4.202 2.65e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1365.2  on 4739  degrees of freedom
+Residual deviance: 1316.5  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 1402.5
+
+Number of Fisher Scoring iterations: 16
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               1.570579e-01                3.805766e-07                7.548576e-07                6.625214e-07                7.548576e-07 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               5.461485e-07                4.029289e-07                5.461485e-07                6.034088e-07                9.885621e+08 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               5.789416e+01                6.299312e-01                7.548576e-07                5.881637e-07                4.753972e-07 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               7.548576e-07                6.717852e-07                7.548576e-07                7.548576e-07                7.548576e-07 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               4.999495e-07                6.193435e-07                3.951450e-07                3.951450e-07                7.548576e-07 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               6.998320e-01                6.034088e-07                5.762282e-07                5.701305e-07                7.548576e-07 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               3.223877e-01                6.360154e-07                7.548576e-07                3.762536e-01                6.910038e-07 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               5.461485e-07                6.570688e-07                5.260704e-07                6.360154e-07                5.793295e-07 
+         william.f..jackson            william.w..fream                 data.ageord 
+               6.360154e-07                5.461485e-07                7.235120e-01 
+
+Call:
+glm(formula = Bellevue_Hospital ~ a.b.roberts + a.g..schratty + 
+    abraham.r..lawrence + ald..pan + alexander.h..schultz + benson.s..hopkins + 
+    bernard.j..mersole + clarkson.crolius + commissioners.of.emigration + 
+    edward.witherell + g.w..anderson + g.w..hansen.4th.ward + 
+    george.h..purser + illegibile + j..blackwell + jacob.l..dodge + 
+    james.d..oliver + james.donnelly + james.kelly + james.walsh + 
+    john.p..cumming + leonard.l..johnson + mcgavin + morris.franklin + 
+    moses.g..leonard + moses.m..s..jackson + moses.maynard + 
+    oscar.s..field + peter.greg + police + resident.physician + 
+    richard.t..compton + superintendent + theodore.r..deforest + 
+    thomas.conner + thomas.spofford + washington.smith + william.a..walker + 
+    william.adams + william.f..jackson + william.w..fream + data.ageord, 
+    family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.4059  -0.2713   0.5774   0.6938   2.5770  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                   -0.93872    0.16128  -5.821 5.87e-09 ***
+a.b.roberts                   14.84079  983.52275   0.015   0.9880    
+a.g..schratty                 13.61912 1455.39753   0.009   0.9925    
+abraham.r..lawrence           -0.23968    0.64794  -0.370   0.7114    
+ald..pan                      13.61912 1455.39753   0.009   0.9925    
+alexander.h..schultz          -0.67667    1.22637  -0.552   0.5811    
+benson.s..hopkins             -0.92980    1.07157  -0.868   0.3856    
+bernard.j..mersole            14.19625 1455.39753   0.010   0.9922    
+clarkson.crolius              14.01770  480.17526   0.029   0.9767    
+commissioners.of.emigration  -16.93588 1455.39753  -0.012   0.9907    
+edward.witherell              -2.46082    1.23595  -1.991   0.0465 *  
+g.w..anderson                 -0.69933    0.09169  -7.627 2.40e-14 ***
+g.w..hansen.4th.ward          13.61912 1455.39753   0.009   0.9925    
+george.h..purser              14.06304  721.50092   0.019   0.9844    
+illegibile                    -0.72615    0.92412  -0.786   0.4320    
+j..blackwell                  13.61912 1455.39753   0.009   0.9925    
+jacob.l..dodge                13.82878  831.20665   0.017   0.9867    
+james.d..oliver               13.61912 1455.39753   0.009   0.9925    
+james.donnelly                13.61912 1455.39753   0.009   0.9925    
+james.kelly                   13.61912 1455.39753   0.009   0.9925    
+james.walsh                   14.35602  720.97091   0.020   0.9841    
+john.p..cumming                0.82040    1.04928   0.782   0.4343    
+leonard.l..johnson            14.77339 1455.39753   0.010   0.9919    
+mcgavin                       14.77339 1455.39753   0.010   0.9919    
+morris.franklin               13.61912 1029.12147   0.013   0.9894    
+moses.g..leonard              -0.06821    0.08829  -0.773   0.4398    
+moses.m..s..jackson           -2.26688    1.23707  -1.832   0.0669 .  
+moses.maynard                  1.19556    1.04017   1.149   0.2504    
+oscar.s..field                14.12391  633.86821   0.022   0.9822    
+peter.greg                    13.61912 1455.39753   0.009   0.9925    
+police                        -4.65346    0.51782  -8.987  < 2e-16 ***
+resident.physician            13.92502 1016.97885   0.014   0.9891    
+richard.t..compton           -17.51302 1455.39753  -0.012   0.9904    
+superintendent                 0.23030    0.35265   0.653   0.5137    
+theodore.r..deforest          -0.68892    0.82470  -0.835   0.4035    
+thomas.conner                 14.19625 1455.39753   0.010   0.9922    
+thomas.spofford               -1.30328    0.53630  -2.430   0.0151 *  
+washington.smith               0.89043    0.76974   1.157   0.2474    
+william.a..walker             13.92502  719.11264   0.019   0.9846    
+william.adams                 14.08998  646.17652   0.022   0.9826    
+william.f..jackson            13.92502 1016.97885   0.014   0.9891    
+william.w..fream              14.19625 1455.39753   0.010   0.9922    
+data.ageord                    0.57713    0.03677  15.694  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 5383.0  on 4739  degrees of freedom
+Residual deviance: 4777.9  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 4863.9
+
+Number of Fisher Scoring iterations: 14
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               3.911280e-01                2.787874e+06                8.216916e+05                7.868803e-01                8.216916e+05 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               5.083083e-01                3.946333e-01                1.463372e+06                1.224074e+06                4.414075e-08 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               8.536474e-02                4.969198e-01                8.216916e+05                1.280852e+06                4.837692e-01 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               8.216916e+05                1.013355e+06                8.216916e+05                8.216916e+05                8.216916e+05 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               1.716876e+06                2.271410e+00                2.606158e+06                2.606158e+06                8.216916e+05 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               9.340610e-01                1.036350e-01                3.305398e+00                1.361239e+06                8.216916e+05 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               9.528611e-03                1.115729e+06                2.478527e-08                1.258978e+00                5.021197e-01 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               1.463372e+06                2.716391e-01                2.436186e+00                1.115729e+06                1.315837e+06 
+         william.f..jackson            william.w..fream                 data.ageord 
+               1.115729e+06                1.463372e+06                1.780926e+00 
+
+Call:
+glm(formula = Lunatic_Asylum_NA ~ a.b.roberts + a.g..schratty + 
+    abraham.r..lawrence + ald..pan + alexander.h..schultz + benson.s..hopkins + 
+    bernard.j..mersole + clarkson.crolius + commissioners.of.emigration + 
+    edward.witherell + g.w..anderson + g.w..hansen.4th.ward + 
+    george.h..purser + illegibile + j..blackwell + jacob.l..dodge + 
+    james.d..oliver + james.donnelly + james.kelly + james.walsh + 
+    john.p..cumming + leonard.l..johnson + mcgavin + morris.franklin + 
+    moses.g..leonard + moses.m..s..jackson + moses.maynard + 
+    oscar.s..field + peter.greg + police + resident.physician + 
+    richard.t..compton + superintendent + theodore.r..deforest + 
+    thomas.conner + thomas.spofford + washington.smith + william.a..walker + 
+    william.adams + william.f..jackson + william.w..fream + data.ageord, 
+    family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.0466  -0.0496  -0.0359   0.0000   3.8341  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    -8.0867     2.1813  -3.707  0.00021 ***
+a.b.roberts                   -14.9301 34039.1307   0.000  0.99965    
+a.g..schratty                 -15.2166 48196.1423   0.000  0.99975    
+abraham.r..lawrence           -15.1632 12045.7068  -0.001  0.99900    
+ald..pan                      -15.2166 48196.1423   0.000  0.99975    
+alexander.h..schultz          -15.0691 27826.0558  -0.001  0.99957    
+benson.s..hopkins             -14.9729 24048.7094  -0.001  0.99950    
+bernard.j..mersole            -15.0691 48196.1423   0.000  0.99975    
+clarkson.crolius              -15.1202 16060.9900  -0.001  0.99925    
+commissioners.of.emigration   -15.0691 48196.1423   0.000  0.99975    
+edward.witherell              -15.1693 27818.8100  -0.001  0.99956    
+g.w..anderson                 -15.0613  1467.6363  -0.010  0.99181    
+g.w..hansen.4th.ward          -15.2166 48196.1423   0.000  0.99975    
+george.h..purser              -15.1076 24092.4446  -0.001  0.99950    
+illegibile                    -15.0122 21547.8506  -0.001  0.99944    
+j..blackwell                  -15.2166 48196.1423   0.000  0.99975    
+jacob.l..dodge                -15.1693 27818.8100  -0.001  0.99956    
+james.d..oliver               -15.2166 48196.1423   0.000  0.99975    
+james.donnelly                -15.2166 48196.1423   0.000  0.99975    
+james.kelly                   -15.2166 48196.1423   0.000  0.99975    
+james.walsh                   -15.0338 24092.8387  -0.001  0.99950    
+john.p..cumming               -15.1326 13908.9197  -0.001  0.99913    
+leonard.l..johnson            -14.9217 48196.1423   0.000  0.99975    
+mcgavin                       -14.9217 48196.1424   0.000  0.99975    
+morris.franklin               -15.2166 34079.8191   0.000  0.99964    
+moses.g..leonard                0.7956     1.2325   0.646  0.51857    
+moses.m..s..jackson           -15.1202 27818.4506  -0.001  0.99957    
+moses.maynard                 -15.1011 12439.7859  -0.001  0.99903    
+oscar.s..field                -15.1033 21539.7631  -0.001  0.99944    
+peter.greg                    -15.2166 48196.1423   0.000  0.99975    
+police                          9.3124     1.0517   8.855  < 2e-16 ***
+resident.physician            -15.1450 34069.5936   0.000  0.99965    
+richard.t..compton            -15.2166 48196.1423   0.000  0.99975    
+superintendent                -15.1361  5757.5353  -0.003  0.99790    
+theodore.r..deforest          -15.1813 17036.2096  -0.001  0.99929    
+thomas.conner                 -15.0691 48196.1423   0.000  0.99975    
+thomas.spofford               -15.1596 12440.6574  -0.001  0.99903    
+washington.smith              -15.0758 11046.8811  -0.001  0.99891    
+william.a..walker             -15.1450 24090.8407  -0.001  0.99950    
+william.adams                 -15.1000 21549.6432  -0.001  0.99944    
+william.f..jackson            -15.1450 34069.5936   0.000  0.99965    
+william.w..fream              -15.0691 48196.1423   0.000  0.99975    
+data.ageord                     0.1474     0.4444   0.332  0.74007    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 770.75  on 4739  degrees of freedom
+Residual deviance: 112.53  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 198.53
+
+Number of Fisher Scoring iterations: 21
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               3.076056e-04                3.280415e-07                2.463388e-07                2.598319e-07                2.463388e-07 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               2.854721e-07                3.142943e-07                2.854721e-07                2.712639e-07                2.854721e-07 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               2.582685e-07                2.877255e-07                2.463388e-07                2.746959e-07                3.022051e-07 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               2.463388e-07                2.582685e-07                2.463388e-07                2.463388e-07                2.463388e-07 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               2.957310e-07                2.679076e-07                3.308220e-07                3.308220e-07                2.463388e-07 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               2.215816e+00                2.712639e-07                2.764883e-07                2.758819e-07                2.463388e-07 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               1.107401e+04                2.646244e-07                2.463388e-07                2.669735e-07                2.551914e-07 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               2.854721e-07                2.607780e-07                2.835649e-07                2.646244e-07                2.767925e-07 
+         william.f..jackson            william.w..fream                 data.ageord 
+               2.646244e-07                2.854721e-07                1.158859e+00 
+
+Call:
+glm(formula = Long_Island_NA ~ a.b.roberts + a.g..schratty + 
+    abraham.r..lawrence + ald..pan + alexander.h..schultz + benson.s..hopkins + 
+    bernard.j..mersole + clarkson.crolius + commissioners.of.emigration + 
+    edward.witherell + g.w..anderson + g.w..hansen.4th.ward + 
+    george.h..purser + illegibile + j..blackwell + jacob.l..dodge + 
+    james.d..oliver + james.donnelly + james.kelly + james.walsh + 
+    john.p..cumming + leonard.l..johnson + mcgavin + morris.franklin + 
+    moses.g..leonard + moses.m..s..jackson + moses.maynard + 
+    oscar.s..field + peter.greg + police + resident.physician + 
+    richard.t..compton + superintendent + theodore.r..deforest + 
+    thomas.conner + thomas.spofford + washington.smith + william.a..walker + 
+    william.adams + william.f..jackson + william.w..fream + data.ageord, 
+    family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7838  -0.1551  -0.0580   0.0000   3.5744  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 -1.892e+01  6.864e+02  -0.028    0.978    
+a.b.roberts                 -8.297e-01  2.024e+04   0.000    1.000    
+a.g..schratty                6.445e-01  2.924e+04   0.000    1.000    
+abraham.r..lawrence          3.571e-01  7.297e+03   0.000    1.000    
+ald..pan                     6.445e-01  2.924e+04   0.000    1.000    
+alexander.h..schultz        -1.312e-02  1.689e+04   0.000    1.000    
+benson.s..hopkins           -7.561e-01  1.417e+04   0.000    1.000    
+bernard.j..mersole          -1.312e-02  2.924e+04   0.000    1.000    
+clarkson.crolius             1.714e-01  9.722e+03   0.000    1.000    
+commissioners.of.emigration -1.312e-02  2.924e+04   0.000    1.000    
+edward.witherell             3.859e-01  1.679e+04   0.000    1.000    
+g.w..anderson                1.782e+01  6.864e+02   0.026    0.979    
+g.w..hansen.4th.ward         6.445e-01  2.924e+04   0.000    1.000    
+george.h..purser             1.229e-01  1.458e+04   0.000    1.000    
+illegibile                   1.987e+01  6.864e+02   0.029    0.977    
+j..blackwell                 6.445e-01  2.924e+04   0.000    1.000    
+jacob.l..dodge               3.859e-01  1.679e+04   0.000    1.000    
+james.d..oliver              6.445e-01  2.924e+04   0.000    1.000    
+james.donnelly               6.445e-01  2.924e+04   0.000    1.000    
+james.kelly                  6.445e-01  2.924e+04   0.000    1.000    
+james.walsh                 -2.119e-01  1.456e+04   0.000    1.000    
+john.p..cumming              2.218e-01  8.421e+03   0.000    1.000    
+leonard.l..johnson          -6.707e-01  2.924e+04   0.000    1.000    
+mcgavin                     -6.707e-01  2.924e+04   0.000    1.000    
+morris.franklin              6.445e-01  2.068e+04   0.000    1.000    
+moses.g..leonard             1.582e+01  6.864e+02   0.023    0.982    
+moses.m..s..jackson          1.714e-01  1.681e+04   0.000    1.000    
+moses.maynard                6.959e-02  7.527e+03   0.000    1.000    
+oscar.s..field               2.156e-02  1.291e+04   0.000    1.000    
+peter.greg                   6.445e-01  2.924e+04   0.000    1.000    
+police                       2.296e-01  3.259e+03   0.000    1.000    
+resident.physician           2.743e-01  2.056e+04   0.000    1.000    
+richard.t..compton           6.445e-01  2.924e+04   0.000    1.000    
+superintendent               1.818e+01  6.864e+02   0.026    0.979    
+theodore.r..deforest         4.457e-01  1.031e+04   0.000    1.000    
+thomas.conner               -1.312e-02  2.924e+04   0.000    1.000    
+thomas.spofford              3.401e-01  7.534e+03   0.000    1.000    
+washington.smith            -2.083e-01  6.529e+03   0.000    1.000    
+william.a..walker            2.743e-01  1.455e+04   0.000    1.000    
+william.adams                9.457e-02  1.305e+04   0.000    1.000    
+william.f..jackson           2.743e-01  2.056e+04   0.000    1.000    
+william.w..fream            -1.312e-02  2.924e+04   0.000    1.000    
+data.ageord                 -6.576e-01  1.255e-01  -5.240  1.6e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 499.40  on 4739  degrees of freedom
+Residual deviance: 390.33  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 476.33
+
+Number of Fisher Scoring iterations: 20
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               6.053432e-09                4.361639e-01                1.904951e+00                1.429167e+00                1.904951e+00 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               9.869649e-01                4.694822e-01                9.869649e-01                1.187017e+00                9.869649e-01 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               1.470990e+00                5.464348e+07                1.904951e+00                1.130752e+00                4.270629e+08 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               1.904951e+00                1.470990e+00                1.904951e+00                1.904951e+00                1.904951e+00 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               8.090452e-01                1.248382e+00                5.113517e-01                5.113517e-01                1.904951e+00 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               7.451318e+06                1.187017e+00                1.072070e+00                1.021790e+00                1.904951e+00 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               1.258081e+00                1.315563e+00                1.904951e+00                7.886968e+07                1.561546e+00 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               9.869649e-01                1.405079e+00                8.119971e-01                1.315563e+00                1.099185e+00 
+         william.f..jackson            william.w..fream                 data.ageord 
+               1.315563e+00                9.869649e-01                5.181053e-01 
+
+Call:
+glm(formula = recent.emigrant ~ Bellevue_Shanty + Bellevue_Garret + 
+    Bellevue_Hospital + Long_Island_NA + Lunatic_Asylum_NA + 
+    Randall_NA + Blackwell_NA + data.ageord, family = "binomial", 
+    data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2051  -0.7702  -0.5878   0.7243   2.8413  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        2.25498    0.23080   9.770  < 2e-16 ***
+Bellevue_Shanty    0.15946    0.27804   0.574  0.56628    
+Bellevue_Garret    1.89942    0.26757   7.099 1.26e-12 ***
+Bellevue_Hospital -0.89800    0.17816  -5.040 4.64e-07 ***
+Long_Island_NA    -1.65603    0.41393  -4.001 6.31e-05 ***
+Lunatic_Asylum_NA -3.24817    0.73863  -4.398 1.09e-05 ***
+Randall_NA        -0.83645    0.25024  -3.343  0.00083 ***
+Blackwell_NA      -0.88720    0.20221  -4.387 1.15e-05 ***
+data.ageord       -0.60508    0.03693 -16.385  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 6310.7  on 5254  degrees of freedom
+Residual deviance: 5543.7  on 5246  degrees of freedom
+  (55 observations deleted due to missingness)
+AIC: 5561.7
+
+Number of Fisher Scoring iterations: 6
+
+      (Intercept)   Bellevue_Shanty   Bellevue_Garret Bellevue_Hospital    Long_Island_NA Lunatic_Asylum_NA        Randall_NA      Blackwell_NA 
+       9.53508640        1.17288116        6.68203853        0.40738375        0.19089618        0.03884505        0.43324380        0.41180849 
+      data.ageord 
+       0.54603003 
+
+Call:
+glm(formula = recent.emigrant ~ a.b.roberts + a.g..schratty + 
+    abraham.r..lawrence + ald..pan + alexander.h..schultz + benson.s..hopkins + 
+    bernard.j..mersole + clarkson.crolius + commissioners.of.emigration + 
+    edward.witherell + g.w..anderson + g.w..hansen.4th.ward + 
+    george.h..purser + illegibile + j..blackwell + jacob.l..dodge + 
+    james.d..oliver + james.donnelly + james.kelly + james.walsh + 
+    john.p..cumming + leonard.l..johnson + mcgavin + morris.franklin + 
+    moses.g..leonard + moses.m..s..jackson + moses.maynard + 
+    oscar.s..field + peter.greg + police + resident.physician + 
+    richard.t..compton + superintendent + theodore.r..deforest + 
+    thomas.conner + thomas.spofford + washington.smith + william.a..walker + 
+    william.adams + william.f..jackson + william.w..fream + data.ageord, 
+    family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.0338  -0.8557  -0.2497   0.8984   2.8991  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                   -0.36712    0.18772  -1.956  0.05050 .  
+a.b.roberts                  -14.44078 1625.13762  -0.009  0.99291    
+a.g..schratty                -13.11332 2399.54472  -0.005  0.99564    
+abraham.r..lawrence          -13.36927  593.39807  -0.023  0.98203    
+ald..pan                     -13.11332 2399.54472  -0.005  0.99564    
+alexander.h..schultz         -13.73044 1385.37779  -0.010  0.99209    
+benson.s..hopkins              1.11304    1.21812   0.914  0.36085    
+bernard.j..mersole           -13.73044 2399.54472  -0.006  0.99543    
+clarkson.crolius             -13.54434  792.10607  -0.017  0.98636    
+commissioners.of.emigration  -13.73044 2399.54472  -0.006  0.99543    
+edward.witherell             -13.34290 1371.03907  -0.010  0.99224    
+g.w..anderson                  2.63644    0.12535  21.033  < 2e-16 ***
+g.w..hansen.4th.ward         -13.11332 2399.54472  -0.005  0.99564    
+george.h..purser             -13.59197 1190.11541  -0.011  0.99089    
+illegibile                     1.17502    1.13184   1.038  0.29920    
+j..blackwell                 -13.11332 2399.54472  -0.005  0.99564    
+jacob.l..dodge               -13.34290 1371.03907  -0.010  0.99224    
+james.d..oliver              -13.11332 2399.54472  -0.005  0.99564    
+james.donnelly               -13.11332 2399.54472  -0.005  0.99564    
+james.kelly                  -13.11332 2399.54472  -0.005  0.99564    
+james.walsh                  -13.90598 1189.08992  -0.012  0.99067    
+john.p..cumming              -13.49578  685.24188  -0.020  0.98429    
+leonard.l..johnson           -14.34757 2399.54472  -0.006  0.99523    
+mcgavin                      -14.34757 2399.54472  -0.006  0.99523    
+morris.franklin              -13.11332 1696.73435  -0.008  0.99383    
+moses.g..leonard               2.91724    0.11985  24.342  < 2e-16 ***
+moses.m..s..jackson          -13.54434 1371.96794  -0.010  0.99212    
+moses.maynard                -13.63598  611.46586  -0.022  0.98221    
+oscar.s..field                 2.53490    0.94264   2.689  0.00716 ** 
+peter.greg                   -13.11332 2399.54472  -0.005  0.99564    
+police                        -1.35170    1.01276  -1.335  0.18198    
+resident.physician           -13.44614 1677.66487  -0.008  0.99361    
+richard.t..compton           -13.11332 2399.54472  -0.005  0.99564    
+superintendent                 1.75668    0.31675   5.546 2.92e-08 ***
+theodore.r..deforest         -13.28885  840.81355  -0.016  0.98739    
+thomas.conner                -13.73044 2399.54472  -0.006  0.99543    
+thomas.spofford              -13.38491  612.73512  -0.022  0.98257    
+washington.smith               0.55835    0.77815   0.718  0.47304    
+william.a..walker            -13.44614 1186.28821  -0.011  0.99096    
+william.adams                -13.62015 1065.80000  -0.013  0.98980    
+william.f..jackson           -13.44614 1677.66487  -0.008  0.99361    
+william.w..fream             -13.73044 2399.54472  -0.006  0.99543    
+data.ageord                   -0.61713    0.04084 -15.111  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 5873.2  on 4739  degrees of freedom
+Residual deviance: 4330.7  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 4416.7
+
+Number of Fisher Scoring iterations: 15
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               6.927252e-01                5.351175e-07                2.018174e-06                1.562422e-06                2.018174e-06 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               1.088791e-06                3.043606e+00                1.088791e-06                1.311496e-06                1.088791e-06 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               1.604172e-06                1.396346e+01                2.018174e-06                1.250498e-06                3.238205e+00 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               2.018174e-06                1.604172e-06                2.018174e-06                2.018174e-06                2.018174e-06 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               9.135016e-07                1.376753e-06                5.873946e-07                5.873946e-07                2.018174e-06 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               1.849013e+01                1.311496e-06                1.196661e-06                1.261518e+01                2.018174e-06 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               2.587992e-01                1.446818e-06                2.018174e-06                5.793170e+00                1.693260e-06 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               1.088791e-06                1.538187e-06                1.747793e+00                1.446818e-06                1.215747e-06 
+         william.f..jackson            william.w..fream                 data.ageord 
+               1.446818e-06                1.088791e-06                5.394928e-01 
+
+Call:
+glm(formula = destitution ~ a.b.roberts + a.g..schratty + abraham.r..lawrence + 
+    ald..pan + alexander.h..schultz + benson.s..hopkins + bernard.j..mersole + 
+    clarkson.crolius + commissioners.of.emigration + edward.witherell + 
+    g.w..anderson + g.w..hansen.4th.ward + george.h..purser + 
+    illegibile + j..blackwell + jacob.l..dodge + james.d..oliver + 
+    james.donnelly + james.kelly + james.walsh + john.p..cumming + 
+    leonard.l..johnson + mcgavin + morris.franklin + moses.g..leonard + 
+    moses.m..s..jackson + moses.maynard + oscar.s..field + peter.greg + 
+    police + resident.physician + richard.t..compton + superintendent + 
+    theodore.r..deforest + thomas.conner + thomas.spofford + 
+    washington.smith + william.a..walker + william.adams + william.f..jackson + 
+    william.w..fream + data.ageord, family = "binomial", data = dummies)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4646  -0.5315  -0.5025  -0.4275   2.4754  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                   -1.36296    0.21203  -6.428 1.29e-10 ***
+a.b.roberts                  -14.84822 1694.51068  -0.009  0.99301    
+a.g..schratty                -14.60406 2399.54472  -0.006  0.99514    
+abraham.r..lawrence           -0.79245    1.03551  -0.765  0.44411    
+ald..pan                     -14.60406 2399.54472  -0.006  0.99514    
+alexander.h..schultz           1.14905    1.22683   0.937  0.34896    
+benson.s..hopkins              0.64766    1.16051   0.558  0.57679    
+bernard.j..mersole           -14.72387 2399.54472  -0.006  0.99510    
+clarkson.crolius             -14.68493  799.61772  -0.018  0.98535    
+commissioners.of.emigration   18.40827 2399.54472   0.008  0.99388    
+edward.witherell               2.61576    1.22743   2.131  0.03308 *  
+g.w..anderson                 -0.04374    0.11582  -0.378  0.70570    
+g.w..hansen.4th.ward         -14.60406 2399.54472  -0.006  0.99514    
+george.h..purser             -14.69475 1199.48252  -0.012  0.99023    
+illegibile                     0.40695    1.12097   0.363  0.71658    
+j..blackwell                 -14.60406 2399.54472  -0.006  0.99514    
+jacob.l..dodge               -14.64502 1384.96763  -0.011  0.99156    
+james.d..oliver               18.52808 2399.54472   0.008  0.99384    
+james.donnelly                18.52808 2399.54472   0.008  0.99384    
+james.kelly                  -14.60406 2399.54472  -0.006  0.99514    
+james.walsh                  -14.75469 1199.47058  -0.012  0.99019    
+john.p..cumming              -14.67505  692.46909  -0.021  0.98309    
+leonard.l..johnson           -14.84368 2399.54472  -0.006  0.99506    
+mcgavin                      -14.84368 2399.54472  -0.006  0.99506    
+morris.franklin              -14.60406 1696.73434  -0.009  0.99313    
+moses.g..leonard              -0.50454    0.11375  -4.435 9.19e-06 ***
+moses.m..s..jackson            1.18845    1.22724   0.968  0.33285    
+moses.maynard                 -0.77472    1.03766  -0.747  0.45530    
+oscar.s..field               -14.70248 1072.31159  -0.014  0.98906    
+peter.greg                   -14.60406 2399.54472  -0.006  0.99514    
+police                       -14.67181  263.28151  -0.056  0.95556    
+resident.physician           -14.66510 1696.17682  -0.009  0.99310    
+richard.t..compton           -14.60406 2399.54472  -0.006  0.99514    
+superintendent                 0.31576    0.32526   0.971  0.33165    
+theodore.r..deforest           0.83278    0.82018   1.015  0.30994    
+thomas.conner                -14.72387 2399.54472  -0.006  0.99510    
+thomas.spofford                1.50828    0.53235   2.833  0.00461 ** 
+washington.smith              -1.05384    1.03031  -1.023  0.30638    
+william.a..walker              0.80260    1.15734   0.693  0.48801    
+william.adams                -14.70062 1072.88867  -0.014  0.98907    
+william.f..jackson           -14.66510 1696.17682  -0.009  0.99310    
+william.w..fream             -14.72387 2399.54472  -0.006  0.99510    
+data.ageord                   -0.11981    0.04761  -2.516  0.01186 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3406.9  on 4739  degrees of freedom
+Residual deviance: 3309.7  on 4697  degrees of freedom
+  (570 observations deleted due to missingness)
+AIC: 3395.7
+
+Number of Fisher Scoring iterations: 15
+
+                (Intercept)                 a.b.roberts               a.g..schratty         abraham.r..lawrence                    ald..pan 
+               2.559017e-01                3.560427e-07                4.545041e-07                4.527335e-01                4.545041e-07 
+       alexander.h..schultz           benson.s..hopkins          bernard.j..mersole            clarkson.crolius commissioners.of.emigration 
+               3.155203e+00                1.911063e+00                4.031857e-07                4.191954e-07                9.876643e+07 
+           edward.witherell               g.w..anderson        g.w..hansen.4th.ward            george.h..purser                  illegibile 
+               1.367759e+01                9.572069e-01                4.545041e-07                4.150978e-07                1.502226e+00 
+               j..blackwell              jacob.l..dodge             james.d..oliver              james.donnelly                 james.kelly 
+               4.545041e-07                4.362638e-07                1.113376e+08                1.113376e+08                4.545041e-07 
+                james.walsh             john.p..cumming          leonard.l..johnson                     mcgavin             morris.franklin 
+               3.909485e-07                4.233591e-07                3.576618e-07                3.576618e-07                4.545041e-07 
+           moses.g..leonard         moses.m..s..jackson               moses.maynard              oscar.s..field                  peter.greg 
+               6.037810e-01                3.281992e+00                4.608343e-01                4.119033e-07                4.545041e-07 
+                     police          resident.physician          richard.t..compton              superintendent        theodore.r..deforest 
+               4.247317e-07                4.275906e-07                4.545041e-07                1.371302e+00                2.299693e+00 
+              thomas.conner             thomas.spofford            washington.smith           william.a..walker               william.adams 
+               4.031857e-07                4.518961e+00                3.485977e-01                2.231324e+00                4.126703e-07 
+         william.f..jackson            william.w..fream                 data.ageord 
+               4.275906e-07                4.031857e-07                8.870894e-01 
