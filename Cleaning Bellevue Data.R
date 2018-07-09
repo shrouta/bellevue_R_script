@@ -50,6 +50,7 @@ data$institution <- as.character(data$institution)
 # Subset the data to keep only the entries that include "sent_to", removes illegible entries
 data <- data[ which(data$reason_cleaned!="(illegible)"), ]
 data <- data[ which(data$reason_cleaned!="for say"), ]
+data <- data[ which(data$site!="NA"), ]
 
 write.csv(bellevue_admittors_sites, file="bellevue_for_R.csv")
 
