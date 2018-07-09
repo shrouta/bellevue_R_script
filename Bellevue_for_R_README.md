@@ -7,6 +7,11 @@ Bellevue_for_R.csv is a cleaned version of this dataset.  It does not currently 
 
 To read more about this data, see the <a href="http://www.nyuirish.net/almshouse/">Digital Almshouse Project website</a>
 
+# Scripts
+Analyzing Bellevue Data.R: A script for statistical analysis of cleaned Bellevue Almshouse Data.
+
+Cleaning Bellevue Data.R: A script for cleaning transcriptions of the Bellevue Almshouse Ledgers.
+
 # Data Dictionary
 Bellevue_for_R
 
